@@ -1,0 +1,70 @@
+<html>
+  <head>
+
+    <title>A Multiplayer Game</title>
+    <style>
+      canvas {
+        width:50%;
+        height: 50%;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+
+  </head>
+  <body>
+
+    <canvas id="canvas">
+      
+
+       <img id="html5" src="https://images.homedepot-static.com/productImages/94af8836-0338-4802-914e-04cc71e562ad/svn/backyard-x-scapes-fake-rocks-hdd-rof-rocsb-64_1000.jpg" />
+       <img id="html6" src="https://www.officemax.co.nz/Images/ProductImages/500/3557618.jpg" />
+       <img id="html7" src="https://cdn.shopify.com/s/files/1/1936/3707/products/14_2048x.jpg?v=1566128715">
+    </canvas>
+    <style type="text/css">
+      #start {
+    width: 200px;
+    height: 50px;   
+    font-size: 20px;
+    position: relative;
+    top: 450px;
+    left: 530px;
+   
+}
+#check{
+   width: 200px;
+    height: 50px;   
+    font-size: 20px;
+    position: relative;
+    top: 450px;
+    right: 0px;
+}
+#win{
+  font-size: 20px;
+    position: relative;
+    top: 150px;
+    left: 400px;
+}
+#intro{
+  font-size: 20px;
+    position: relative;
+    top: 570px;
+    left: 0px;
+}
+    </style>
+    <script type="text/javascript">
+      
+    </script>
+    <button type="button" id="start" onclick="gameStart()" >Start</button>
+    <button type="button" id="check" onclick="playerWinCheck()" >Check</button>
+      <script src="/static/game2.js"></script>
+    <div id="win"></div>
+  <div id="intro">
+    <p> Instructions: Player 1 can use the keys 'A' for rock, 'W' for paper, and 'D' for scissors. Player 2 can use "left arrow key" for rock, "up arrow key" for paper and "right arrow key" for scissors. To restart the game, please reload the page.</p>
+
+  </div>
+    
+  </body>
+  
+ 
+</html>
